@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1777497284.7883 "/home/fabio/MP 2026 LFV/protótipo.tex" "protótipo.pdf" "protótipo" 1777497285.82234 0
+["pdflatex"] 1777499160.37184 "/home/fabio/MP 2026 LFV/protótipo.tex" "protótipo.pdf" "protótipo" 1777499161.67206 0
   "/etc/texmf/web2c/texmf.cnf" 1777241547.33998 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/fabio/MP 2026 LFV/protótipo.tex" 1777483547.12301 13847 968fcdefde58bfa37d44dbda272e7cc2 ""
+  "/home/fabio/MP 2026 LFV/protótipo.tex" 1777498738.44826 13834 7c6905ac885509dca7973993e39ad107 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -94,9 +94,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1777241579.8236 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1777241649 8213348 1e0fb7e9bcbf7d8025f406962bad90e8 ""
-  "protótipo.aux" 1777497285.74072 367 593408bafed6c34e9af86f8177838939 "pdflatex"
-  "protótipo.out" 1777497285.74072 330 ee6de27f7d60c2f5731d4af6b58238ae "pdflatex"
-  "protótipo.tex" 1777483547.12301 13847 968fcdefde58bfa37d44dbda272e7cc2 ""
+  "protótipo.aux" 1777499161.53676 367 593408bafed6c34e9af86f8177838939 "pdflatex"
+  "protótipo.out" 1777499161.53876 330 ee6de27f7d60c2f5731d4af6b58238ae "pdflatex"
+  "protótipo.tex" 1777498738.44826 13834 7c6905ac885509dca7973993e39ad107 ""
   (generated)
   "protótipo.aux"
   "protótipo.log"

@@ -1,0 +1,417 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{physics}
+\usepackage{slashed}
+\usepackage{graphicx}
+
+\begin{document}
+
+\section*{$\mu \to e \gamma$}
+
+\subsection*{General calculation}
+
+We consider the radiative charged-lepton flavor violating decay
+\begin{equation}
+    \mu(p) \to e(p-q) + \gamma(q).
+\end{equation}
+
+The amplitude can be written as
+\begin{equation}
+    \mathcal{M}(\mu \to e\gamma)
+    =
+    e\, \epsilon^{*\mu}(q)
+    \mel{e}{J_\mu^{\rm em}}{\mu}.
+\end{equation}
+
+The most general matrix element compatible with Lorentz covariance is
+\begin{equation}
+    \mel{e}{J_\mu^{\rm em}}{\mu}
+    =
+    \bar{u}_e(p-q)
+    \left[
+        i q^\nu \sigma_{\mu\nu} (A + B\gamma_5)
+        + \gamma_\mu (C + D\gamma_5)
+        + q_\mu (E + F\gamma_5)
+    \right]
+    u_\mu(p).
+\end{equation}
+
+From the Ward identity of electromagnetism,
+\begin{equation}
+    \partial^\mu J_\mu^{\rm em}=0,
+\end{equation}
+we have
+\begin{equation}
+    q^\mu \mel{e}{J_\mu^{\rm em}}{\mu}=0.
+\end{equation}
+
+Contracting the general decomposition with $q^\mu$, one obtains
+\begin{align}
+    q^\mu J_\mu^{\rm em}
+    &=
+    i q^\mu q^\nu \sigma_{\mu\nu}(A+B\gamma_5)
+    + \slashed{q}(C+D\gamma_5)
+    + q^2(E+F\gamma_5).
+\end{align}
+
+The first term vanishes because $q^\mu q^\nu$ is symmetric while
+$\sigma_{\mu\nu}$ is antisymmetric:
+\begin{equation}
+    q^\mu q^\nu \sigma_{\mu\nu}=0.
+\end{equation}
+
+Since the external photon is on shell,
+\begin{equation}
+    q^2=0,
+\end{equation}
+the Ward identity reduces to
+\begin{equation}
+    \bar{u}_e(p-q)\slashed{q}(C+D\gamma_5)u_\mu(p)=0.
+\end{equation}
+
+Using
+\begin{equation}
+    q = p - (p-q),
+\end{equation}
+and the Dirac equations
+\begin{equation}
+    \slashed{p} u_\mu(p)=m_\mu u_\mu(p),
+    \qquad
+    \bar{u}_e(p-q)\slashed{(p-q)}=m_e \bar{u}_e(p-q),
+\end{equation}
+we find
+\begin{align}
+    \bar{u}_e(p-q)\slashed{q}(C+D\gamma_5)u_\mu(p)
+    &=
+    \bar{u}_e(p-q)
+    \left[
+        \slashed{p} - \slashed{(p-q)}
+    \right]
+    (C+D\gamma_5)u_\mu(p)
+    \notag \\
+    &=
+    \bar{u}_e(p-q)
+    \left[
+        m_\mu(C-D\gamma_5)
+        -
+        m_e(C+D\gamma_5)
+    \right]
+    u_\mu(p).
+\end{align}
+
+Therefore,
+\begin{equation}
+    m_e(C+D\gamma_5)-m_\mu(C-D\gamma_5)=0.
+\end{equation}
+
+In the limit $m_e \ll m_\mu$, this implies
+\begin{equation}
+    C=D=0.
+\end{equation}
+
+Thus the remaining amplitude is
+\begin{equation}
+    \mathcal{M}(\mu \to e\gamma)
+    =
+    e\,\epsilon^{*\mu}(q)\,
+    \bar{u}_e(p-q)
+    \left[
+        i q^\nu \sigma_{\mu\nu}(A+B\gamma_5)
+    \right]
+    u_\mu(p).
+\end{equation}
+
+Using the chiral projectors
+\begin{equation}
+    P_{R,L} = \frac{1\pm \gamma_5}{2},
+\end{equation}
+we can rewrite
+\begin{equation}
+    A+B\gamma_5 = A_R P_R + A_L P_L,
+\end{equation}
+where
+\begin{equation}
+    A_R = A+B,
+    \qquad
+    A_L = A-B.
+\end{equation}
+
+Therefore,
+\begin{equation}
+    \mathcal{M}(\mu \to e\gamma)
+    =
+    e\,\epsilon^{*\mu}(q)\,
+    \bar{u}_e(p-q)
+    i\sigma_{\mu\nu}q^\nu
+    \left(
+        A_R P_R + A_L P_L
+    \right)
+    u_\mu(p).
+\end{equation}
+
+After summing over final spins and photon polarizations, and averaging over the initial muon spin, one obtains
+\begin{equation}
+    \overline{|\mathcal{M}|^2}
+    =
+    m_\mu^4 e^2
+    \left(
+        |A_R|^2 + |A_L|^2
+    \right),
+\end{equation}
+where we have used $m_\mu \gg m_e$.
+
+The decay width is then
+\begin{equation}
+    \Gamma(\mu \to e\gamma)
+    =
+    \frac{1}{16\pi m_\mu}
+    \overline{|\mathcal{M}|^2}
+    =
+    \frac{m_\mu^3 e^2}{16\pi}
+    \left(
+        |A_R|^2 + |A_L|^2
+    \right).
+\end{equation}
+
+\subsection*{SM calculation}
+
+We now compute the contribution in the Standard Model with massive neutrinos. Working in $R_\xi$ gauge and neglecting Goldstone bosons, the relevant diagram contains a $W$ boson and a neutrino running in the loop.
+
+The one-loop amplitude has the schematic form
+\begin{align}
+    i\mathcal{M}^{(1)}
+    &=
+    \int \frac{d^4k}{(2\pi)^4}\,
+    \bar{u}_e(p-q)
+    \sum_k
+    \frac{g}{\sqrt{2}} U^*_{ek}
+    \gamma^\alpha
+    \frac{1-\gamma_5}{2}
+    \frac{i(\slashed{p}-\slashed{k}+m_{\nu_k})}
+    {(p-k)^2-m_{\nu_k}^2}
+    \frac{g}{\sqrt{2}} U_{\mu k}
+    \gamma^\beta
+    \frac{1-\gamma_5}{2}
+    u_\mu(p)
+    \notag \\
+    &\quad \times
+    \frac{-i}{k^2-m_W^2}
+    \left(
+        g_{\alpha\rho}
+        -
+        (1-\xi)\frac{k_\alpha k_\rho}{k^2-\xi m_W^2}
+    \right)
+    \left[
+        -ie\,\Gamma^{\rho\sigma\mu}_{WW\gamma}
+    \right]
+    \notag \\
+    &\quad \times
+    \frac{-i}{(k+q)^2-m_W^2}
+    \left(
+        g_{\sigma\beta}
+        -
+        (1-\xi)\frac{(k+q)_\sigma (k+q)_\beta}
+        {(k+q)^2-\xi m_W^2}
+    \right)
+    \epsilon^*_\mu(q).
+\end{align}
+
+The three-gauge-boson vertex is
+\begin{equation}
+    \Gamma_{\rho\sigma\mu}^{WW\gamma}
+    =
+    (-q-k)_\sigma g_{\rho\mu}
+    +
+    (2k+q)_\mu g_{\rho\sigma}
+    -
+    (2q+k)_\rho g_{\sigma\mu}.
+\end{equation}
+
+The fermionic propagator can be expanded as
+\begin{equation}
+    \sum_k
+    \frac{U_{\mu k}U^*_{ek}}
+    {(p+k)^2-m_{\nu_k}^2}
+    =
+    \sum_k
+    \left[
+        \frac{U_{\mu k}U^*_{ek}}{(p+k)^2}
+        +
+        \frac{U_{\mu k}U^*_{ek}m_{\nu_k}^2}{(p+k)^4}
+        + \cdots
+    \right].
+\end{equation}
+
+Using unitarity of the PMNS matrix,
+\begin{equation}
+    UU^\dagger = \mathbb{1},
+\end{equation}
+we have
+\begin{equation}
+    \sum_k U_{\mu k}U^*_{ek} = \delta_{\mu e}=0.
+\end{equation}
+
+Therefore the leading term vanishes, and the first surviving contribution is proportional to
+\begin{equation}
+    \sum_k U_{\mu k}U^*_{ek}m_{\nu_k}^2.
+\end{equation}
+
+Using the freedom to subtract a common mass, this can also be written as
+\begin{align}
+    \sum_k U_{\mu k}U^*_{ek}m_{\nu_k}^2
+    &=
+    -m_1^2
+    \left(
+        U_{\mu 2}U^*_{e2}
+        +
+        U_{\mu 3}U^*_{e3}
+    \right)
+    +
+    U_{\mu 2}U^*_{e2}m_2^2
+    +
+    U_{\mu 3}U^*_{e3}m_3^2
+    \notag \\
+    &=
+    U_{\mu 2}U^*_{e2}\Delta m_{21}^2
+    +
+    U_{\mu 3}U^*_{e3}\Delta m_{31}^2.
+\end{align}
+
+This means that differences of neutrino masses are responsible for the amount of charged lepton flavor violation generated in the SM. In the right-handed amplitude, however, the suppression is even stronger because of the chirality structure.
+
+The loop calculation gives
+\begin{equation}
+    A^{(1)}_R
+    =
+    \frac{g^2 e}{32\pi^2}
+    \frac{m_\mu}{m_W^4}
+    \sum_{k=2,3}
+    U_{\mu k}U^*_{ek}m_{\nu_k}^2
+    \left[
+        -\frac{1}{3}
+        +
+        \frac{3}{s-1}
+        -
+        \frac{1}{(s-1)^2}
+        \left(
+            \frac{2s\ln s}{s-1}
+            -1
+        \right)
+    \right].
+\end{equation}
+
+Here $s$ denotes the gauge parameter associated with the $R_\xi$ gauge calculation.
+
+Taking the limit $s \to \infty$, the loop function tends to
+\begin{equation}
+    A_R^{(1)} \to A_R.
+\end{equation}
+
+Thus the decay rate behaves parametrically as
+\begin{equation}
+    \Gamma(\mu \to e\gamma)
+    \propto
+    \left|
+        \sum_{k=2,3}
+        U_{\mu k}U^*_{ek}
+        \frac{\Delta m_{k1}^2}{m_W^2}
+    \right|^2
+    \sim 10^{-44}.
+\end{equation}
+
+\subsection*{EFT calculation}
+
+At the effective-field-theory level, the leading contribution to $\mu \to e\gamma$ comes from dimension-six dipole operators. The relevant terms in the effective Lagrangian are
+\begin{equation}
+    \mathcal{L}
+    \supset
+    \frac{C^{e\gamma}_{e\mu}}{\Lambda^2}
+    \frac{v}{\sqrt{2}}\,
+    \bar{e}\sigma_{\mu\nu}P_R\mu\,F^{\mu\nu}
+    +
+    \frac{C^{e\gamma}_{\mu e}}{\Lambda^2}
+    \frac{v}{\sqrt{2}}\,
+    \bar{\mu}\sigma_{\mu\nu}P_R e\,F^{\mu\nu}
+    + \text{h.c.}
+\end{equation}
+
+Equivalently, after taking the hermitian conjugate of the second term, the amplitude can be written as
+\begin{equation}
+    i\mathcal{M}
+    =
+    \bar{u}_e(p-q)
+    \frac{v}{\sqrt{2}\Lambda^2}
+    \sigma_{\mu\nu}q^\mu
+    \left[
+        C^{e\gamma}_{e\mu}P_R
+        +
+        C^{e\gamma *}_{\mu e}P_L
+    \right]
+    u_\mu(p)\,
+    \epsilon^{*\nu}(q).
+\end{equation}
+
+Matching this amplitude with the general parametrization,
+\begin{equation}
+    \mathcal{M}(\mu \to e\gamma)
+    =
+    e\,\epsilon^{*\mu}
+    \bar{u}_e i\sigma_{\mu\nu}q^\nu
+    \left(
+        A_RP_R+A_LP_L
+    \right)
+    u_\mu,
+\end{equation}
+we identify
+\begin{equation}
+    C^{e\gamma}_{e\mu}
+    =
+    A_R \frac{\sqrt{2}e\Lambda^2}{v},
+    \qquad
+    C^{e\gamma *}_{\mu e}
+    =
+    A_L \frac{\sqrt{2}e\Lambda^2}{v}.
+\end{equation}
+
+Therefore,
+\begin{equation}
+    A_R =
+    \frac{v}{\sqrt{2}e\Lambda^2}
+    C^{e\gamma}_{e\mu},
+    \qquad
+    A_L =
+    \frac{v}{\sqrt{2}e\Lambda^2}
+    C^{e\gamma *}_{\mu e}.
+\end{equation}
+
+Substituting into the decay width,
+\begin{equation}
+    \Gamma(\mu \to e\gamma)
+    =
+    \frac{m_\mu^3 e^2}{16\pi}
+    \left(
+        |A_R|^2+|A_L|^2
+    \right),
+\end{equation}
+we obtain
+\begin{equation}
+    \Gamma(\mu \to e\gamma)
+    =
+    \frac{m_\mu^3 v^2}{32\pi\Lambda^4}
+    \left(
+        |C^{e\gamma}_{e\mu}|^2
+        +
+        |C^{e\gamma}_{\mu e}|^2
+    \right).
+\end{equation}
+
+% In your handwritten note, the final expression appears with an 8\pi
+% in the denominator. This depends on the normalization convention for
+% the dipole operator and for F_{\mu\nu}. Check whether a factor of 2
+% from F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu was included
+% in the Feynman rule.
+
+In this EFT description, the suppression does not come from neutrino masses. Instead, it comes from the scale $\Lambda$ of new physics and from the Wilson coefficients $C^{e\gamma}_{e\mu}$ and $C^{e\gamma}_{\mu e}$, that once are abtrary we set that $C\tilde\ \mathcal(O)(1)$.
+
+\end{document}

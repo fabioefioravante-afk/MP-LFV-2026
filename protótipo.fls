@@ -115,14 +115,8 @@ INPUT ./protótipo.aux
 INPUT ./protótipo.aux
 INPUT protótipo.aux
 OUTPUT protótipo.aux
-INPUT ./protótipo.out
-INPUT ./protótipo.out
-INPUT protótipo.out
-INPUT protótipo.out
-OUTPUT protótipo.pdf
-INPUT ./protótipo.out
-INPUT ./protótipo.out
 OUTPUT protótipo.out
+OUTPUT protótipo.pdf
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -175,6 +169,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT ./protótipo.bbl
 INPUT ./protótipo.bbl
 INPUT protótipo.bbl
@@ -182,6 +177,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT protótipo.aux
 INPUT ./protótipo.out
 INPUT ./protótipo.out
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

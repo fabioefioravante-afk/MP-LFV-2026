@@ -1,0 +1,59 @@
+\begin{thebibliography}{10}
+
+\bibitem{cheng_li_gauge}
+Ta-Pei Cheng and Ling~Fong li.
+\newblock {\em Gauge theory of elementary particle physics}.
+\newblock Oxford University Press, 1984.
+\newblock Seção 13.3 $\mu\to e\gamma$, an example of $R_\xi-gauge$ loop calculations.
+
+\bibitem{Calibbi2018}
+L.~Calibbi and G.~Signorelli.
+\newblock Charged lepton flavour violation: An experimental and theoretical introduction.
+\newblock 2018.
+
+\bibitem{meg}
+{MEG II Collaboration}.
+\newblock New limit on the $\mu^+\to e^+\gamma$ decay with the {MEG II} experiment.
+\newblock 2025.
+
+\bibitem{schwartz_qft}
+Matthew~D. Schwartz.
+\newblock {\em Quantum Field Theory and the Standard Model}.
+\newblock Cambridge University Press, 2013.
+
+\bibitem{peskin_schroeder}
+Michael~E. Peskin and Daniel~V. Schroeder.
+\newblock {\em An Introduction to Quantum Field Theory}.
+\newblock Westview Press, 1995.
+
+\bibitem{key}
+I.~Brivio and M.~Trott.
+\newblock The standard model as an effective field theory.
+\newblock 2018.
+
+\bibitem{Buras}
+Andrzej~J. Buras.
+\newblock {\em Gauge theory of Weak Decays}.
+\newblock Cambridge University Press, 2020.
+
+\bibitem{neutrinoless_Ef}
+Y.~L. Yang and P.~W. Zhao.
+\newblock Neutrinoless double-beta decay in a finite volume from relativistic effective field theory.
+\newblock 2024.
+
+\bibitem{manohar}
+Elizabeth~E. Jenkins, Aneesh~V. Manohar, and Michael Trott.
+\newblock Renormalization group evolution of the standard model dimension six operators i: Formalism and $\lambda$ dependence.
+\newblock 2020.
+
+\bibitem{neutrino_mass}
+Aditya Dev.
+\newblock Neutrino oscillations and mass models.
+\newblock 2023.
+
+\bibitem{mohapatra}
+R.~N. Mohapatra and P.~B. Pal.
+\newblock {\em Massive Neutrinos in Physics and Astrophysics}.
+\newblock World Scientific Publishing Company, 1991.
+
+\end{thebibliography}
